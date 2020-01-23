@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200121011737_Terceira.1.cs" />
+    <Compile Remove="Migrations\20200121011737_Terceira.1.Designer.cs" />
+    <Compile Remove="Migrations\20200121012234_Terceira.1.cs" />
+    <Compile Remove="Migrations\20200121012234_Terceira.1.Designer.cs" />
+    <Compile Remove="Migrations\20200121012337_Terceira.1.cs" />
+    <Compile Remove="Migrations\20200121012337_Terceira.1.Designer.cs" />
+    <Compile Remove="Migrations\20200121013517_First.cs" />
+    <Compile Remove="Migrations\20200121013517_First.Designer.cs" />
+    <Compile Remove="Migrations\20200121013650_First.cs" />
+    <Compile Remove="Migrations\20200121013650_First.Designer.cs" />
+    <Compile Remove="Migrations\20200121014137_First.cs" />
+    <Compile Remove="Migrations\20200121014137_First.Designer.cs" />
+    <Compile Remove="Migrations\20200121015204_First.cs" />
+    <Compile Remove="Migrations\20200121015204_First.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Acesso\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PowerBlack.Model\PowerBlack.Model.csproj" />
+  </ItemGroup>
+
+</Project>
